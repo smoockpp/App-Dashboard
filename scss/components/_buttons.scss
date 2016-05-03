@@ -33,28 +33,24 @@ a.notifications {
 		margin-right: 15px;
 		height: 20px;
 		width: 20px;
-
 	}
 	&:after {
-	  content: '';
-	  height: 70%; //You can change this if you want smaller/bigger borders
-	  width: 1px;
-
-
-	  right: 0;
-	  top: 0; // If you want to set a smaller height and center it, change this value
-
-	  background: rgba(0, 0, 0, .3); // The color of your border
+	  	content: '';
+	  	height: 70%; 
+	  	width: 1px;
+	  	right: 0;
+	  	top: 0;
+	  	background: rgba(0, 0, 0, .3); 
 	}
 	&:before {
-			content: ".";
-			font-size: 50px;
-			color: $color-sec;
-			position: relative;
-			height: 10px;
-			width: 10px;
-			left: 22px;
-			bottom: 60px;
+		content: ".";
+		font-size: 50px;
+		color: $color-sec;
+		position: relative;
+		height: 10px;
+		width: 10px;
+		left: 22px;
+		bottom: 60px;
 	}
 	&:hover {
 		img {
@@ -66,34 +62,32 @@ a.notifications {
 
 a.no-dot:before {
 	content: "";
-			font-size: 50px;
-			color: $color-sec;
-			position: relative;
-			height: 0;
-			width: 0;
-			left: 22px;
-			bottom: 60px;
+	font-size: 50px;
+	color: $color-sec;
+	position: relative;
+	height: 0;
+	width: 0;
+	left: 22px;
+	bottom: 60px;
 }
 
 a.profile {
 	@include transition(background);
 	float: right;
-
 	background: transparent;
 	border: none;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	
 	color: $color-text-white;
 	font-size: 0.8em;
 	padding: 0 10px;
 	-webkit-touch-callout: none; /* iOS Safari */
-	  -webkit-user-select: none;   /* Chrome/Safari/Opera */
-	  -khtml-user-select: none;    /* Konqueror */
-	  -moz-user-select: none;      /* Firefox */
-	  -ms-user-select: none;       /* IE/Edge */
-	  user-select: none;           /* non-prefixed version, currently
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* IE/Edge */
+	user-select: none;           /* non-prefixed version, currently
                                   not supported by any browser */
 	img {
 		border-radius: 100%;
@@ -107,18 +101,13 @@ a.profile {
 	}
 }
 
-
-
-
 a.link {
 	@extend %transition-all;
 	opacity: 0.7;
 }
 a.active {
-		opacity: 1;
-	}
-
-
+	opacity: 1;
+}
 .menu li:hover {
 	cursor: pointer;
 	a.link {
@@ -396,134 +385,162 @@ span.square-desktop {
 /****************************************
 ----------- Switch button --------------*/
 
-    .onoffswitch {
-        position: relative; width: 90px; 
-        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-        @media #{$brk-narrow} {
-        	left: 100px;
-        	bottom: 20px;
-        }
-        @media #{$brk-wide} {
-        	left: 250px;
-        	bottom: 25px;
-        }
+.onoffswitch {
+    position: relative; width: 90px; 
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    @media #{$brk-narrow} {
+   		left: 100px;
+   		bottom: 20px;
+	}
+    @media #{$brk-wide} {
+       	left: 250px;
+       	bottom: 25px;
     }
-    .onoffswitch-checkbox {
-        display: none;
-    }
-    .onoffswitch-label {
-        display: block; overflow: hidden; cursor: pointer;
-        border: 2px solid #999999; border-radius: 20px;
-    }
-    .onoffswitch-inner {
-        display: block; width: 200%; margin-left: -100%;
-        transition: margin 0.3s ease-in 0s;
-    }
-    .onoffswitch-inner:before, .onoffswitch-inner:after {
-        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-        box-sizing: border-box;
-    }
-    .onoffswitch-inner:before {
-        content: "ON";
-        padding-left: 10px;
-        background-color: #7477bf; color: #FFFFFF;
-    }
-    .onoffswitch-inner:after {
-        content: "OFF";
-        padding-right: 10px;
-        background-color: #EEEEEE; color: #999999;
-        text-align: right;
-    }
-    .onoffswitch-switch {
-    	@extend %transition-all;
-        display: block; 
-        width: 18px;
-        height: 18px;
-        margin: 8px;
-        background: #FFFFFF;
-        position: absolute; 
-        top: 0; bottom: 0;
-        right: 56px;
-        border: 2px solid #999999; 
-        border-radius: 20px; 
-    }
-    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
-        margin-left: 0;
-    }
-    .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-        right: 0px; 
-    }
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid #999999; 
+    border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, 
+.onoffswitch-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 30px; 
+    padding: 0; 
+    line-height: 30px;
+    font-size: 14px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #7477bf; 
+    color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; 
+    color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+ 	@extend %transition-all;
+    display: block; 
+    width: 18px;
+    height: 18px;
+    margin: 8px;
+    background: #FFFFFF;
+    position: absolute; 
+    top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; 
+    border-radius: 20px; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
 
 
 
-    .onoffswitch1 {
-        position: relative; width: 90px; float: right;
-        -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-        @media #{$brk-narrow} {
-        	left: 100px;
-        	bottom: 20px;
-        }
-        @media #{$brk-wide} {
-        	left: 250px;
-        	bottom: 25px;
-        }
+.onoffswitch1 {
+    position: relative; 
+    width: 90px; 
+    float: right;
+    -webkit-user-select:none; 
+    -moz-user-select:none; 
+    -ms-user-select: none;
+    @media #{$brk-narrow} {
+    	left: 100px;
+        bottom: 20px;
     }
-    .onoffswitch-checkbox1 {
-        display: none;
+    @media #{$brk-wide} {
+      	left: 250px;
+       	bottom: 25px;
     }
-    .onoffswitch-label1 {
-        display: block; overflow: hidden; cursor: pointer;
-        border: 2px solid #999999; border-radius: 20px;
-    }
-    .onoffswitch-inner1 {
-        display: block; width: 200%; margin-left: -100%;
-        transition: margin 0.3s ease-in 0s;
-    }
-    .onoffswitch-inner1:before, .onoffswitch-inner1:after {
-        display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-        font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
-        box-sizing: border-box;
-    }
-    .onoffswitch-inner1:before {
-        content: "ON";
-        padding-left: 10px;
-        background-color: #7477bf; color: #FFFFFF;
-    }
-    .onoffswitch-inner1:after {
-        content: "OFF";
-        padding-right: 10px;
-        background-color: #EEEEEE; color: #999999;
-        text-align: right;
-    }
-    .onoffswitch-switch1 {
-    	@extend %transition-all;
-        display: block;
-        width: 18px;
-        height: 18px;
-        margin: 8px;
-        background: #FFFFFF;
-        position: absolute; 
-        top: 0; 
-        bottom: 0;
-        right: 56px;
-        border: 2px solid #999999; 
-        border-radius: 20px;
-        
-
-    }
-    .onoffswitch-checkbox1:checked + .onoffswitch-label1 .onoffswitch-inner1 {
-        margin-left: 0;
-    }
-    .onoffswitch-checkbox1:checked + .onoffswitch-label1 .onoffswitch-switch1 {
-        right: 0px; 
-    }
-
-
-
-/*****************************
-------- Select button 	   **/
-
+}
+.onoffswitch-checkbox1 {
+    display: none;
+}
+.onoffswitch-label1 {
+    display: block; 
+    overflow: hidden; 
+    cursor: pointer;
+    border: 2px solid #999999; 
+    border-radius: 20px;
+}
+.onoffswitch-inner1 {
+    display: block; 
+    width: 200%; 
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner1:before, 
+.onoffswitch-inner1:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 30px; 
+    padding: 0; 
+    line-height: 30px;
+    font-size: 14px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner1:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #7477bf; 
+    color: #FFFFFF;
+}
+.onoffswitch-inner1:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; 
+    color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch1 {
+  	@extend %transition-all;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: 8px;
+    background: #FFFFFF;
+    position: absolute; 
+    top: 0; 
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; 
+    border-radius: 20px;
+}
+.onoffswitch-checkbox1:checked + .onoffswitch-label1 .onoffswitch-inner1 {
+    margin-left: 0;
+}
+.onoffswitch-checkbox1:checked + .onoffswitch-label1 .onoffswitch-switch1 {
+    right: 0px; 
+}
 
 
 .save-button {
@@ -543,7 +560,6 @@ span.square-desktop {
 	}
 	&:hover {
 		background: $color-sec;
-
 	}
 }
 
@@ -558,14 +574,11 @@ span.square-desktop {
 	border: none;
 	border-radius: 4px;
 	@media #{$brk-wide} {
-		
 		width: 45%;
 		display: inline-block;
-
 	}
 	&:hover {
 		background: $color-ter;
-
 	}
 }
 
@@ -573,93 +586,89 @@ span.square-desktop {
 
 
 .select-hidden {
-  display: none;
-  visibility: hidden;
-  padding-right: 10px;
+  	display: none;
+  	visibility: hidden;
+  	padding-right: 10px;
 }
 .select {
 	@extend %clearfix;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  font-size: 16px;
-  color: $color-text-white;
-  width: 80%;
-  height: 80px;
-  margin: 30px auto;
-  @media #{$brk-narrow} {
-  	height: 60px;
-  }
-  @media #{$brk-wide} {
-  	width: 100%;
-  	margin: 9px auto;
-
-  }
+	cursor: pointer;
+  	display: inline-block;
+  	position: relative;
+  	font-size: 16px;
+  	color: $color-text-white;
+  	width: 80%;
+  	height: 80px;
+  	margin: 30px auto;
+  	@media #{$brk-narrow} {
+  		height: 60px;
+  	}
+  	@media #{$brk-wide} {
+  		width: 100%;
+  		margin: 9px auto;
+ 	}
 }
 .select-styled {
-  position: absolute; 
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: $color-four;
-  padding: 17px 15px 35px 15px;
-  height: 80px;
-  width: 100%;
+  	position: absolute; 
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	background: $color-four;
+  	padding: 17px 15px 35px 15px;
+  	height: 80px;
+  	width: 100%;
  	border-radius: 4px;
  	vertical-align: middle;
-  &:after {
-    content:"";
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-color: $white transparent transparent transparent;
-    position: absolute;
-    top: 30px;
-    right: 10px;
-  }
-  &:hover {
-    background: darken($color-four, 2);
-  }
-  &:active, &.active {
-    background-color: darken($color-four, 5);
-    &:after {
-      top: 15px;
-      border-color: transparent transparent $alabaster transparent;
-    }
-  }
-  @media #{$brk-narrow} {
-  	height: 60px;  	
-  }
+ 	&:after {
+    	content:"";
+    	width: 0;
+    	height: 0;
+    	border: 7px solid transparent;
+    	border-color: $white transparent transparent transparent;
+    	position: absolute;
+    	top: 30px;
+    	right: 10px;
+  	}
+  	&:hover {
+    	background: darken($color-four, 2);
+  	}
+  	&:active, &.active {
+    	background-color: darken($color-four, 5);
+    	&:after {
+      		top: 15px;
+      		border-color: transparent transparent $alabaster transparent;
+    	}
+  	}
+  	@media #{$brk-narrow} {
+  		height: 60px;  	
+  	}
 }
 
 .select-options {
-  display: none; 
-  position: absolute;
-  bottom: 100%;
-  height: 400px;
-  overflow: auto;
-  right: 0;
-  left: 0;
-  z-index: 999;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: darken($color-four, 5);
-  -webkit-appearance: none;
-  li {
-    margin: 0;
-    padding: 12px 20px 12px 10px;
-    
-    border-top: 1px solid darken($alabaster, 10);
-   
-    &:hover {
-      color: $alabaster;
-      background: $color-four;
-    }
-    &[rel="hide"] {
-      display: none;
-    }
-
-  }
+  	display: none; 
+  	position: absolute;
+  	bottom: 100%;
+  	height: 400px;
+  	overflow: auto;
+  	right: 0;
+  	left: 0;
+  	z-index: 999;
+  	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  	background-color: darken($color-four, 5);
+  	-webkit-appearance: none;
+  	li {
+    	margin: 0;
+    	padding: 12px 20px 12px 10px;
+    	border-top: 1px solid darken($alabaster, 10);
+    	&:hover {
+    	  	color: $alabaster;
+      		background: $color-four;
+    	}
+    	&[rel="hide"] {
+      		display: none;
+    	}
+	}
 }

@@ -580,46 +580,6 @@ main {
     .settings-saved-box {
       margin-top: 0; } }
 
-@media (min-width: 769px) {
-  [class^="col-"] {
-    float: left;
-    padding: 0 1rem; }
-
-  .col-1 {
-    width: calc(100% / 12); }
-
-  .col-2 {
-    width: calc(100% / 12 * 2); }
-
-  .col-3 {
-    width: calc(100% / 12 * 3); }
-
-  .col-4 {
-    width: calc(100% / 12 * 4); }
-
-  .col-5 {
-    width: calc(100% / 12 * 5); }
-
-  .col-6 {
-    width: calc( 100% / 12 * 6 ); }
-
-  .col-7 {
-    width: calc(100% / 12 * 7); }
-
-  .col-8 {
-    width: calc(100% / 12 * 8); }
-
-  .col-9 {
-    width: calc(100% / 12 * 9); }
-
-  .col-10 {
-    width: calc(100% / 12 * 10); }
-
-  .col-11 {
-    width: calc(100% / 12 * 11); }
-
-  .col-12 {
-    width: calc(100% / 12 * 12); } }
 body:after, .row:after, .main-header:after, .main-header .main-nav:after, main:after, .navigation:after, .menu:after, .search-container:after, .alert-box:after, .row-traffic:after, .row-charts:after, #js-legend1:after, .select:after {
   content: "";
   display: table;
@@ -667,7 +627,6 @@ body:after, .row:after, .main-header:after, .main-header .main-nav:after, main:a
   src: url("../fonts/opensans-light.ttf");
   font-weight: 400;
   font-style: normal; }
-/* Logo style -----------------------*/
 .weight-bold {
   font-size: 1.25em;
   line-height: 1.9;
@@ -984,7 +943,7 @@ a.profile {
   -ms-user-select: none;
   /* IE/Edge */
   user-select: none;
-  	                               /* non-prefixed version, currently
+  	                             /* non-prefixed version, currently
                                     not supported by any browser */ }
   a.profile img {
     border-radius: 100%;
@@ -1235,7 +1194,8 @@ span.square-desktop {
   margin-left: -100%;
   transition: margin 0.3s ease-in 0s; }
 
-.onoffswitch-inner:before, .onoffswitch-inner:after {
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
   display: block;
   float: left;
   width: 50%;
@@ -1312,7 +1272,8 @@ span.square-desktop {
   margin-left: -100%;
   transition: margin 0.3s ease-in 0s; }
 
-.onoffswitch-inner1:before, .onoffswitch-inner1:after {
+.onoffswitch-inner1:before,
+.onoffswitch-inner1:after {
   display: block;
   float: left;
   width: 50%;
@@ -1357,8 +1318,6 @@ span.square-desktop {
 .onoffswitch-checkbox1:checked + .onoffswitch-label1 .onoffswitch-switch1 {
   right: 0px; }
 
-/*****************************
-------- Select button 	   **/
 .save-button {
   margin-top: 20px;
   width: 80%;

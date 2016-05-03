@@ -1,25 +1,20 @@
 main {
 	@extend %clearfix;
 	width: 100%;
-	
 	.row-first {
   		margin-top: 120px;
   		@media #{$brk-narrow} {
 			margin-top: 0;
 		}
   	}
-
-	
 }
 
 .navigation {
   @extend %clearfix;
-
 }
 
 .menu {
   @extend %clearfix;
-
   position: fixed;
   display: flex;
   flex-direction: row;
@@ -39,7 +34,6 @@ main {
     	height: 60px;
     	width: 100%;
     	margin: 10px 0;
-    	
     }
   }
   li.active {
@@ -56,7 +50,6 @@ main {
     justify-content: flex-start;
     height: calc(100vh - 70px);
     float: left;
-    
     margin-top: 70px; 
   }
 }
@@ -81,7 +74,6 @@ main {
 				float: right;
 			}
 		}
-
 		.search-input {
 			float: left;
 			width: 90%;
@@ -101,7 +93,6 @@ main {
 			width: 380px;
 			float: right;
 			margin-bottom: 5px;
-			
 		}
 	}
 	@media #{$brk-narrow} {
@@ -131,38 +122,29 @@ main {
 			font-weight: bold;
 		}
 		.close-btn {
-			
 			margin-left: auto;
 			position: relative;
 			padding: 5px 0 5px 10px;
-
 		}
-		
 	}
 	@media #{$brk-narrow} {
 		width: calc(100% - 150px);
 		float: left;
 		margin-left: 120px;
-		
 	}
-
 }
 
 .row-traffic {
 	@extend %clearfix;
 	max-height: 400px;
 }
-
 .canvas-container {
 	margin-top: 50px;
 	display: flex;
 	flex-direction: column;
 	width: 95%;
-	
-	
 	canvas {
 		width: 100% !important;
-	    
 	    height: auto !important;
 	}
 }
@@ -195,14 +177,11 @@ main {
 				color: $color-text-white;
 			}
 		}
-
 		@media #{$brk-narrow} {
 			justify-content: flex-end;
-			
 			width: 50%;
 		}
 	}
-	
 	canvas {
 			height: 400px !important;
 		}
@@ -215,7 +194,6 @@ main {
 			height: 400px !important;
 		}
 	}
-
 }
 
 .barchart-container {
@@ -231,9 +209,7 @@ main {
 	}
 	canvas{
 	    width: 100% !important;
-	    
 	    height: 350px !important;
-        
     }
 }
 
@@ -263,25 +239,18 @@ main {
 			margin: 50px auto;
 			flex-direction: column;
 			align-items: baseline;
-			
 		}
-
-
 	}
 	canvas {
 			height: 250px !important;
 		}
 	@media #{$brk-narrow} {
 		display: block;
-		
 		width: calc(100% / 2 - 45px );
 		float: right;
 		padding: 30px;
-		
 		border: 1px solid $color-border-light;
 		border-left: none;
-		
-		
 		.row-doughnut {
 			display: flex;
 			width: 100%;
@@ -296,7 +265,6 @@ main {
 			}
 		}
 	}
-
 }
 
 

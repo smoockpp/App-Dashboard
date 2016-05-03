@@ -3,18 +3,14 @@
 @include font-face('Open Sans', opensans);
 
 
-/* Logo style -----------------------*/
-
 .weight-bold {
 	@include text(1.25em, 1.9, bold, $color-text-white);
 	font-family: $stack-open-sans;
-
 }
 
 .weight-light {
 	@include text(1.25em, 1.9, lighter, $color-text-white);
 	font-family: $stack-open-sans;
-	
 }
 
 .notifications-heading,
@@ -84,7 +80,6 @@ h4.activity-heading,
 h4.message-heading,
 h4.settings-heading {
 	@include text(0.85em, 1, bold, $color-text-base);
-
 	float: left;
 	margin: 0 0 15px 0;
 	text-align: center;
@@ -110,14 +105,11 @@ h3.social-network-heading {
 	float: left;
 	margin-bottom: 0;
 	margin-top: 0;
-	
 	width: calc(100% - 120px);
 }
 
 .social-visits {
 	@include text(3em, 1, lighter, $color-text-base);
-
-
 }
 
 .bold {

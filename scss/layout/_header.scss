@@ -2,7 +2,6 @@
 .row-header {
   display: flex;
   width: 100%;
-
 }
 
 
@@ -22,9 +21,7 @@
     flex-direction: row;
   }
   @media #{$brk-narrow} {
-    
     height: 70px;
-
   }
 }
 
@@ -45,7 +42,6 @@
       img {
         @extend %profile-img-small;
         margin-top: 20px;
-        
       }
       &:not(:first-child) {
         border-top: 1px solid $color-sec;
@@ -66,9 +62,7 @@
           transform: scale(1.1);
         }
       }
-      
     }
-
   }
   @media #{$brk-narrow} {
     margin-top: 20px;
@@ -78,7 +72,6 @@
     left: 1125px;
   }
 }
-
 
 .profile-box {
   position: fixed;

@@ -4,19 +4,11 @@
  text-align: center;
 }
 
-// Top border
+// border
 
 %full-border {
   border-top: 1px solid $color-border-light;
 }
-
-// Containers
-
-
-
-// Columns
-
-
 
 // Clearfix
 
@@ -25,7 +17,6 @@
     content: "";
     display: table;
     clear: both;
-
   }
 }
 
