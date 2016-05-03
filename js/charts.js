@@ -73,11 +73,11 @@ var mobileUsersData = [
         highlight: "rgba(77, 77, 114, .5)",
         label: "iOS"
     }
-]
+];
 
 var options = {
 	bezierCurve : false 
-}
+};
 
 
 Chart.defaults.global = {
@@ -216,9 +216,6 @@ Chart.defaults.global = {
 
     //bar chart
 
-    //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-    scaleBeginAtZero : true,
-
     //Boolean - Whether grid lines are shown across the chart
     scaleShowGridLines : true,
 
@@ -277,7 +274,7 @@ Chart.defaults.global = {
     legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
 
 
-}
+};
 
 
 var traffic = document.getElementById('traffic-chart').getContext('2d');

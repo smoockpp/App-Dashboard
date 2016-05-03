@@ -15,7 +15,7 @@ var profileBox = {
 		this.accountSettings.insertAfter(this.viewProfile);
 		this.signOut.insertAfter(this.accountSettings);
 	}
-}
+};
 
 profileBox.profileIcon.click(function(e) {
 	if (profileBox.isOpened === false) { 

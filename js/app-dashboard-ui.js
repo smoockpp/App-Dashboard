@@ -2,11 +2,11 @@ var appDashboardUI = {
 	searchTextSize: function() {
 		var searchBar = $('.search');
 		searchBar.focus(function() {
-			if (this.value == 'Search') {
+			if (this.value === 'Search') {
 				this.value = '';
 			} 
 		}).blur(function() {
-			if (this.value == '') {
+			if (this.value === '') {
 				this.value = 'Search';
 			}
 		});
@@ -175,4 +175,4 @@ var appDashboardUI = {
 		messageSentBox.append(messageSentHeading);
 
 	}
-}
+};

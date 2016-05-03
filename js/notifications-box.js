@@ -15,7 +15,7 @@ var notificationsBox = {
 			$(this).clone(true).insertAfter(notificationsBox.notificationsHeading);
 		});
 	}
-}
+};
 
 notificationsBox.notificationsIcon.click(function(e) {
 	if (notificationsBox.isOpened === false) { 

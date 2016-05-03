@@ -22,7 +22,7 @@ var appAlert = {
 
 	}
 
-}
+};
 
 appAlert.createAlert();
 
