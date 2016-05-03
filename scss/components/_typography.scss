@@ -1,0 +1,223 @@
+/* Web Fonts -------------------- */
+
+@include font-face('Open Sans', opensans);
+
+
+/* Logo style -----------------------*/
+
+.weight-bold {
+	@include text(1.25em, 1.9, bold, $color-text-white);
+	font-family: $stack-open-sans;
+
+}
+
+.weight-light {
+	@include text(1.25em, 1.9, lighter, $color-text-white);
+	font-family: $stack-open-sans;
+	
+}
+
+.notifications-heading,
+.profile-heading {
+	@include text(1.125em, 1, normal, $color-text-white);
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: center;
+	border-bottom: 2px solid $color-sec;
+	width: 80%;
+}
+
+h3.user-profile {
+	@include text(1em, 1, normal, $color-text-white);
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 80%;
+	.view-profile {
+		font-size: 0.825em;
+		color: $color-text-light;
+	}
+}
+
+h1.heading-active {
+	@include text(1.5em, 1, bold, $color-text-base);
+	font-family: $stack-open-sans;
+	text-align: center;
+	margin: 1em 0;
+	@media #{$brk-narrow} {
+		float: left;
+		margin: 0;
+		padding: 100px 30px 1em 120px;
+		width: 276px;
+		border-right: 1px solid $color-border-light;
+	}
+}
+
+p.alert-msg {
+	color: $color-text-white;
+}
+
+#js-legend1 {
+	@extend %clearfix;
+	.line-legend {
+		margin-top: 10px;
+		li {
+			display: inline-block;
+			margin-left: 25px;
+			padding-bottom: 20px;
+			span {
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				margin-right: 10px;
+				border-radius: 4px;
+				margin-bottom: -7px;
+			}
+		}		
+	}
+}
+
+h4.chart-heading,
+h4.social-heading,
+h4.members-heading,
+h4.activity-heading,
+h4.message-heading,
+h4.settings-heading {
+	@include text(0.85em, 1, bold, $color-text-base);
+
+	float: left;
+	margin: 0 0 15px 0;
+	text-align: center;
+	@media #{$brk-narrow} {
+		width: 50%;
+		text-align: left;
+	}
+}
+
+h4.social-heading {
+	@media #{$brk-narrow} {
+		margin-left: 90px;
+		text-align: center;
+	}
+	@media #{$brk-wide} {
+		margin-left: 0;
+		text-align: left;
+	}
+}
+
+h3.social-network-heading {
+	@include text(1.125em, 1, bold, $color-text-prim);
+	float: left;
+	margin-bottom: 0;
+	margin-top: 0;
+	
+	width: calc(100% - 120px);
+}
+
+.social-visits {
+	@include text(3em, 1, lighter, $color-text-base);
+
+
+}
+
+.bold {
+	font-weight: bold;
+}
+
+h4.members-heading,
+h4.activity-heading,
+h4.settings-heading {
+	@media #{$brk-narrow} {
+		width: 100%;
+	}
+}
+
+h4.message-heading,
+h4.settings-heading {
+	@media #{$brk-narrow} {
+		text-align: center;
+	}
+	@media #{$brk-wide} {
+		text-align: left;
+	}
+}
+
+h4.settings-heading {
+	@media #{$brk-narrow} {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	@media #{$brk-wide} {
+		text-align: left;
+		margin-bottom: 30px;
+	}
+}
+
+a.read-more { 
+	float: right;			
+	color: $color-text-prim;
+	font-size: 2em;
+	-webkit-transform:scale(1.0, 1.5);
+	-moz-transform:scale(1.0, 1.5);
+	-ms-transform:scale(1.0, 1.5);
+	-o-transform:scale(1.0, 1.5);
+	transform:scale(1.0,1.5);
+}
+p.time-ago {
+	float: left ;
+	font-weight: normal ;
+	margin: 0 ;
+}
+
+p.activity-sentence {
+	width: 60%;
+	display: inline-block;
+	margin: -25px 0 0 0;
+	@media #{$brk-narrow} {
+		margin: -5px 0 0 0;
+	}
+	@media #{$brk-wide} {
+		margin: -15px 0 0 0;
+	}
+}
+
+.user-input {
+	width: 80%;
+	height: 40px;
+	background: $alabaster;
+	border-radius: 4px;
+	border: 1px solid $color-border-light;
+	text-indent: 20px;
+	color: $color-text-light;
+	@media #{$brk-wide} {
+		width: 100%;
+	}
+}
+
+.message-input {
+	margin-top: 20px;
+	width: 80%;
+	height: 140px;
+	background: $alabaster;
+	border-radius: 4px;
+	border: 1px solid $color-border-light;
+	font-family: $stack-open-sans;
+	text-indent: 20px;
+	color: $color-text-light;
+	font-size: 0.85em;
+	padding: 5px 0;
+	resize: none;
+	@media #{$brk-wide} {
+		width: 100%;
+	}
+}
+
+.message-sent-heading,
+.settings-saved-heading {
+	@include text(1.25em, 1, normal, $color-text-white);
+	padding: 5px 10px;
+	text-align: center;
+	.sent-to-user {
+		color: $color-ter;
+	}
+}

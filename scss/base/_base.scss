@@ -1,0 +1,77 @@
+/* Base Styles -------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  @extend %clearfix;
+  @include text(1em, 1.5, $color: $color-text-base);
+  margin: 0 auto;
+  font-family: $stack-open-sans;
+  width: 100%;
+  
+  margin: 0 auto;
+}
+
+main {
+  max-width: 1440px;
+}
+
+.row-header {
+  max-width: 1440px;
+}
+
+h1,
+h2 {
+  font-family: $stack-open-sans;
+}
+
+h2 {
+  @include text(3.3125em, 1.1, normal);
+
+}
+
+h3 {
+  @include text(1.25em, 1.2, $color: $color-text-base);
+
+}
+
+img {
+  max-width: 100%;
+  
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.row {
+  @extend %clearfix;
+  width: 95%;
+  margin: auto;
+  
+  @media #{$brk-narrow} {
+    width: 100%;
+  }
+}
+
+/* Pseudo-classes ------------------ */
+
+a {
+  &:link {
+    color: $color-link-default;
+    text-decoration: none;
+  }
+  &:visited {
+    color: $color-link-default;
+  }
+  &:hover {
+    color: rgba($color-link-default, .5);
+  }
+}
